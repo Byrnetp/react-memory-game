@@ -1,26 +1,76 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import { Navbar } from './components/Navbar';
+import { Header } from './components/Header';
+import { Board } from './components/Board';
+import { Footer } from './components/Footer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+let images = [
+  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_barnaby.png', alt: 'barnaby'},
+  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_bogart.png', alt: 'bogart'},
+  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_buzz.png', alt: 'buzz'},
+  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_crystal.png', alt: 'crystal'},
+  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_data.png', alt: 'data'},
+  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_doc.png', alt: 'doc'},
+  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_farnsworth.png', alt: 'farnsworth'},
+  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_jasper.png', alt: 'jasper'},
+  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_jersey.png', alt: 'jersey'},
+  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_junior.png', alt: 'junior'},
+  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_lief.png', alt: 'lief'},
+  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_oliver.png', alt: 'oliver'}
+];
+
+export class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      score: 0,
+      topScore: 0,
+      message: 'Click on any image to start!',
+      clicked: []
+    }
+    this.update = this.update.bind(this);
+  }
+
+  update(e) {
+    const clickTarget = e.target.alt;
+    if (this.state.clicked.indexOf(clickTarget) !== -1) {
+      this.setState({
+        score: 0,
+        message: 'Sorry, you guessed incorrectly!',
+        clicked: []
+      });
+    } else if (this.state.score+1 > this.state.topScore) {
+      this.setState({
+        score: this.state.score+1,
+        topScore: this.state.topScore+1,
+        message: 'Good job! You guessed correctly!',
+        clicked: this.state.clicked.concat(clickTarget)
+      });
+    } else {
+      this.setState({
+        score: this.state.score+1,
+        message: 'Good job! You guessed correctly!',
+        clicked: this.state.clicked.concat(clickTarget)
+      });
+    }
+  }
+
+  render() {
+    images = images.sort((a, b) => 0.5 - Math.random());
+    return (
+      <div className="App">
+        <Navbar 
+          score={this.state.score} 
+          topScore={this.state.topScore} 
+          message={this.state.message} />
+        <Header />
+        <Board 
+          images={images}
+          update={this.update} />
+        <Footer />
+      </div>
+    );
+  }
 }
-
-export default App;
