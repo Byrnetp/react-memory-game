@@ -51,6 +51,17 @@ li {
   border-radius: 5px;
 }
 
+@keyframes select {
+  from {background-color: white;}
+  to {background-color: darkolivegreen;}
+}
+
+.tile:hover {
+  animation-name: select;
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
+}
+
 .board-row {
   display: block;
   float: none;
