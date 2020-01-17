@@ -12,7 +12,7 @@ let images = [
   {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_buzz.png', alt: 'buzz'},
   {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_crystal.png', alt: 'crystal'},
   {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_data.png', alt: 'data'},
-  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_doc.png', alt: 'doc'},
+  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_mia.png', alt: 'mia'},
   {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_farnsworth.png', alt: 'farnsworth'},
   {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_jasper.png', alt: 'jasper'},
   {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_jersey.png', alt: 'jersey'},
@@ -38,20 +38,20 @@ export class App extends React.Component {
     if (this.state.clicked.indexOf(clickTarget) !== -1) {
       this.setState({
         score: 0,
-        message: 'Sorry, you guessed incorrectly!',
+        message: 'Sorry, you chose incorrectly!',
         clicked: []
       });
     } else if (this.state.score+1 > this.state.topScore) {
       this.setState({
         score: this.state.score+1,
         topScore: this.state.topScore+1,
-        message: 'Good job! You guessed correctly!',
+        message: 'You chose correctly!',
         clicked: this.state.clicked.concat(clickTarget)
       });
     } else {
       this.setState({
         score: this.state.score+1,
-        message: 'Good job! You guessed correctly!',
+        message: 'You chose correctly!',
         clicked: this.state.clicked.concat(clickTarget)
       });
     }

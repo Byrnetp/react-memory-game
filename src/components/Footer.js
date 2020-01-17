@@ -11,7 +11,7 @@ export const Footer = () => {
           </li>
           <li
             style={{position: 'absolute', right: '10px'}} >
-            Created by Travis Byrne
+            2020 Travis Byrne
           </li>
         </ul>
     </div>
