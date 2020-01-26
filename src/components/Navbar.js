@@ -5,9 +5,9 @@ export const Navbar = (props) => {
     return (
         <nav>
             <ul>
-                <li style={{position: 'absolute', left: '10px'}}>Owl Memory Game</li>
-                <li style={{position: 'absolute', left: '40%'}}>{props.message}</li>
-                <li style={{position: 'absolute', right: '10px'}}>Score: {props.score} | Top Score: {props.topScore}</li>
+                <li id="nav-title">Owl Memory Game</li>
+                <li id="nav-message">{props.message}</li>
+                <li id="nav-score">Score: {props.score} | Top Score: {props.topScore}</li>
             </ul>
         </nav>
     );

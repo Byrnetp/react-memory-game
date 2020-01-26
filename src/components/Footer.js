@@ -4,14 +4,11 @@ export const Footer = () => {
   return (
     <div id='footer'>
         <ul>
-          <li
-            style={{position: 'absolute', left: '10px'}}>
-            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png' alt='react logo' />
-            Owl Memory Game
+          <li>
+            <a href="https://github.com/Byrnetp/react-memory-game">Github</a>
           </li>
-          <li
-            style={{position: 'absolute', right: '10px'}} >
-            2020 Travis Byrne
+          <li>
+              2020 Travis Byrne
           </li>
         </ul>
     </div>

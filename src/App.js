@@ -38,20 +38,27 @@ export class App extends React.Component {
     if (this.state.clicked.indexOf(clickTarget) !== -1) {
       this.setState({
         score: 0,
-        message: 'Sorry, you chose incorrectly!',
+        message: 'Sorry, you chose incorrectly, try again!',
+        clicked: []
+      });
+    } else if (this.state.score === images.length - 1) {
+      this.setState({
+        score: this.state.score+1,
+        topScore: this.state.topScore+1, 
+        message: 'You Win! Click another owl to play again.',
         clicked: []
       });
     } else if (this.state.score+1 > this.state.topScore) {
       this.setState({
         score: this.state.score+1,
         topScore: this.state.topScore+1,
-        message: 'You chose correctly!',
+        message: 'Nice job! You got a new high score!',
         clicked: this.state.clicked.concat(clickTarget)
       });
     } else {
       this.setState({
         score: this.state.score+1,
-        message: 'You chose correctly!',
+        message: 'Nice job!',
         clicked: this.state.clicked.concat(clickTarget)
       });
     }
