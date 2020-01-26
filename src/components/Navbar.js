@@ -5,7 +5,6 @@ export const Navbar = (props) => {
     return (
         <nav>
             <ul>
-                <li id="nav-title">Owl Memory Game</li>
                 <li id="nav-message">{props.message}</li>
                 <li id="nav-score">Score: {props.score} | Top Score: {props.topScore}</li>
             </ul>

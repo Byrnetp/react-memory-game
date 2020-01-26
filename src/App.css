@@ -14,14 +14,17 @@ nav {
   min-height: 70px;
 }
 
+ul {
+  padding-inline-start: 0px;
+}
+
 nav ul li {
   display: inline-block;
   margin: 10px;
 }
 
 #nav-message {
-  margin-left: auto;
-  margin-right: auto;
+  float: left;
 }
 
 #nav-score {
@@ -91,12 +94,31 @@ nav ul li {
 }
 
 #footer ul li {
-  position: 'absolute';
-  left: '10px';
+  display: inline-block;
+  margin: 10px;
+  float: right;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: lightgray;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {
   .tile {
     width: 30%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  nav ul li {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

@@ -38,12 +38,12 @@ export class App extends React.Component {
     if (this.state.clicked.indexOf(clickTarget) !== -1) {
       this.setState({
         score: 0,
-        message: 'Sorry, you chose incorrectly, try again!',
+        message: 'Sorry, you chose incorrectly. try again!',
         clicked: []
       });
     } else if (this.state.score === images.length - 1) {
       this.setState({
-        score: this.state.score+1,
+        score: 0,
         topScore: this.state.topScore+1, 
         message: 'You Win! Click another owl to play again.',
         clicked: []
