@@ -16,7 +16,8 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.0.1",
     "serialize-javascript": "2.1.1",
-    "set-value": "2.0.1"
+    "set-value": "2.0.1",
+    "websocket-extensions": "0.1.4"
   },
   "scripts": {
     "predeploy": "npm run build",
