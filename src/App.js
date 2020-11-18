@@ -12,13 +12,13 @@ let images = [
   {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_buzz.png', alt: 'buzz'},
   {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_crystal.png', alt: 'crystal'},
   {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_data.png', alt: 'data'},
-  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_mia.png', alt: 'mia'},
+  {src: 'https://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_goblin.png', alt: 'goblin'},
   {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_farnsworth.png', alt: 'farnsworth'},
   {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_jasper.png', alt: 'jasper'},
   {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_jersey.png', alt: 'jersey'},
   {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_junior.png', alt: 'junior'},
-  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_lief.png', alt: 'lief'},
-  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_oliver.png', alt: 'oliver'}
+  {src: 'https://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_peabody.png', alt: 'peabody'},
+  {src: 'https://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_minerva.png', alt: 'minerva'}
 ];
 
 export class App extends React.Component {
