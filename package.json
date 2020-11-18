@@ -8,7 +8,7 @@
     "elliptic": "6.5.3",
     "eslint-utils": "1.4.1",
     "gh-pages": "^2.2.0",
-    "handlebars": "4.3.0",
+    "handlebars": "4.5.3",
     "kind-of": "6.0.3",
     "lodash": "4.17.19",
     "lodash.template": "4.5.0",
