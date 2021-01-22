@@ -9,7 +9,7 @@
     "eslint-utils": "1.4.1",
     "gh-pages": "^2.2.0",
     "handlebars": "4.5.3",
-    "immer": "1.10.0",
+    "immer": "8.0.1",
     "kind-of": "6.0.3",
     "lodash": "4.17.19",
     "lodash.template": "4.5.0",
