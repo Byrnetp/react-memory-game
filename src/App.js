@@ -7,18 +7,18 @@ import { Board } from './components/Board';
 import { Footer } from './components/Footer';
 
 let images = [
-  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_barnaby.png', alt: 'barnaby'},
-  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_bogart.png', alt: 'bogart'},
-  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_buzz.png', alt: 'buzz'},
-  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_crystal.png', alt: 'crystal'},
-  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_data.png', alt: 'data'},
-  {src: 'https://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_goblin.png', alt: 'goblin'},
-  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_farnsworth.png', alt: 'farnsworth'},
-  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_jasper.png', alt: 'jasper'},
-  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_jersey.png', alt: 'jersey'},
-  {src: 'http://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_junior.png', alt: 'junior'},
-  {src: 'https://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_peabody.png', alt: 'peabody'},
-  {src: 'https://www.worldbirdsanctuary.org/wp-content/uploads/resident_owls_minerva.png', alt: 'minerva'}
+  {src: 'https://imgur.com/YbgWJS2', alt: 'barnaby'},
+  {src: 'https://imgur.com/scLso7U', alt: 'bogart'},
+  {src: 'https://imgur.com/VSLepIN', alt: 'buzz'},
+  {src: 'https://imgur.com/OJls2qJ', alt: 'crystal'},
+  {src: 'https://imgur.com/dSJoMXz', alt: 'data'},
+  {src: 'https://imgur.com/9pkBJzv', alt: 'goblin'},
+  {src: 'https://imgur.com/HveyRIs', alt: 'farnsworth'},
+  {src: 'https://imgur.com/jzdUSr5', alt: 'jasper'},
+  {src: 'https://imgur.com/aj53FBg', alt: 'jersey'},
+  {src: 'https://imgur.com/GvraQhk', alt: 'junior'},
+  {src: 'https://imgur.com/8dfn1Vq', alt: 'peabody'},
+  {src: 'https://imgur.com/UgydPy5', alt: 'minerva'}
 ];
 
 export class App extends React.Component {
