@@ -8,7 +8,7 @@ export const Footer = () => {
             <a href="https://github.com/Byrnetp/react-memory-game">Github</a>
           </li>
           <li>
-              2020 Travis Byrne
+              2020-2023 Travis Byrne
           </li>
         </ul>
     </div>
