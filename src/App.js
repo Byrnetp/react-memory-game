@@ -7,18 +7,18 @@ import { Board } from './components/Board';
 import { Footer } from './components/Footer';
 
 let images = [
-  {src: 'https://imgur.com/YbgWJS2', alt: 'barnaby'},
-  {src: 'https://imgur.com/scLso7U', alt: 'bogart'},
-  {src: 'https://imgur.com/VSLepIN', alt: 'buzz'},
-  {src: 'https://imgur.com/OJls2qJ', alt: 'crystal'},
-  {src: 'https://imgur.com/dSJoMXz', alt: 'data'},
-  {src: 'https://imgur.com/9pkBJzv', alt: 'goblin'},
-  {src: 'https://imgur.com/HveyRIs', alt: 'farnsworth'},
-  {src: 'https://imgur.com/jzdUSr5', alt: 'jasper'},
-  {src: 'https://imgur.com/aj53FBg', alt: 'jersey'},
-  {src: 'https://imgur.com/GvraQhk', alt: 'junior'},
-  {src: 'https://imgur.com/8dfn1Vq', alt: 'peabody'},
-  {src: 'https://imgur.com/UgydPy5', alt: 'minerva'}
+  {src: 'https://i.imgur.com/YbgWJS2.jpg', alt: 'barnaby'},
+  {src: 'https://i.imgur.com/scLso7U.jpg', alt: 'bogart'},
+  {src: 'https://i.imgur.com/VSLepIN.jpg', alt: 'buzz'},
+  {src: 'https://i.imgur.com/OJls2qJ.jpg', alt: 'crystal'},
+  {src: 'https://i.imgur.com/dSJoMXz.jpg', alt: 'data'},
+  {src: 'https://i.imgur.com/9pkBJzv.jpg', alt: 'goblin'},
+  {src: 'https://i.imgur.com/HveyRIs.jpg', alt: 'farnsworth'},
+  {src: 'https://i.imgur.com/jzdUSr5.jpg', alt: 'jasper'},
+  {src: 'https://i.imgur.com/aj53FBg.jpg', alt: 'jersey'},
+  {src: 'https://i.imgur.com/GvraQhk.jpg', alt: 'junior'},
+  {src: 'https://i.imgur.com/8dfn1Vq.jpg', alt: 'peabody'},
+  {src: 'https://i.imgur.com/UgydPy5.jpg', alt: 'minerva'}
 ];
 
 export class App extends React.Component {
